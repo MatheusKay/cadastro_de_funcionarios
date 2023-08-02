@@ -1,0 +1,193 @@
+body {
+    background-color: #bdb8b8;
+}
+
+.link_separador {
+    color: #000;
+}
+
+/*Cartao de cadastro/Css*/
+
+.cartao_cadastro {
+    background-color: #ccc;
+    padding: 32px 16px; 
+}
+
+/*Main/CSS do formulario*/
+
+.primeira_linha__label,
+.segunda_linha__label,
+.terceira_linha__label {
+    margin-right: 8px;
+}
+
+.primeira_linha__input,
+.segunda_linha__input,
+.terceira_linha__input {
+    margin-right: 24px;
+    font-size: 18px;
+    padding-left: 16px;
+    border: none;
+}
+
+.quarta_linha {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quarta_linha__selecao {
+    padding: 6px;
+}
+
+/*Css dos inputs*/
+
+.primeira_linha__input__nome {
+    width: 40%;
+}
+
+.primeira_linha__input__idade {
+    width: 7%;
+}
+
+.primeira_linha__input__sexo {
+    width: 15%;
+}
+
+.segunda_linha__input__endereco {
+    width: 65%;
+}
+
+.terceira_linha__input__email {
+    width: 48%;
+}
+
+/*Main/CSS da seção de funcionarios*/
+
+#tabela_funcionarios {
+    max-width: 100%;
+    margin-top: 5%;
+}
+
+.tabela_funcionarios__lista {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4%;
+}
+
+.linha {
+    width: 335px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 14px;
+    box-shadow: 7px -9px 16px 0px #00000080;
+}
+
+#foto_funcionario {
+    width: 45%;
+    margin-left: 28%;
+    margin-bottom: 18px;
+    border-bottom: 3px solid black;
+    border-radius: 14px;
+}
+
+.info_funcionario {
+    font-size: 18px;
+    margin: 4px 0;
+    word-spacing: 5px;
+    word-wrap: break-word;
+}
+
+.info_funcionario__negrito {
+    font-weight: bold;
+}
+
+/*Media do site*/
+
+@media screen and (max-width: 767px) {
+    
+    /*Css do card de cadastro*/
+    
+    .foto_cadastro,
+    .tab-content>.active {
+        display: flex;
+        justify-content: center;
+    }
+
+    .primeira_linha, 
+    .segunda_linha,
+    .terceira_linha {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .primeira_linha__input,
+    .segunda_linha__input,
+    .terceira_linha__input,
+    .quarta_linha__selecao {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-top: 8px;
+    }
+
+    .buttons_linha {
+        margin-top: 16px;
+    }
+
+    /*Css do card do funcionario*/
+
+    .tabela_funcionarios__lista {
+        display: block;
+    }
+
+    .linha {
+        margin-top: 42px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    
+    /*Css do card de cadastro*/
+
+    .card_cadastro {
+        flex-direction: column;
+    }
+
+    .card_cadastro__info {
+        width: 100%;
+    }
+
+    .primeira_linha__input__nome {
+        width: 38%;
+    }
+
+    .segunda_linha__input__endereco {
+        width: 84%;
+    }
+
+    .terceira_linha {
+        display: flex;
+    }
+
+    .terceira_linha__input__email {
+        width: 60%;
+    }
+
+    .buttons_linha {
+        margin-top: 16px;
+    }
+
+    /*Css do card do funcionario*/
+
+    .tabela_funcionarios__lista {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2%;
+    }
+
+    .linha {
+        margin-top: 24px;
+    }
+}

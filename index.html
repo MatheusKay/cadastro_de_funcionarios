@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="cartao_cadastro mt-5">
+                <div class="card_cadastro row align-items-center">
+                    <div class="col-md-4 col-lg-3 foto_cadastro">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-B3yxH5E7bDgZ5b258ASTMiNO_ZpaXwB0Fg&usqp=CAU" alt="">
+                    </div>
+                    <div class="card_cadastro__info col-md-8 col-lg-9">
+                        <form id="form"> 
+                            <div class="primeira_linha mt-4 mb-md-4">
+                                <label class="primeira_linha__label" for="nome">Nome:</label>
+                                <input class="primeira_linha__input primeira_linha__input__nome" id="nome" type="text">
+            
+                                <label class="primeira_linha__label" for="idade">Idade:</label>
+                                <input class="primeira_linha__input primeira_linha__input__idade" id="idade" type="number">
+
+                                <label class="primeira_linha__label" for="sexo">Gênero:</label>
+                                <input class="primeira_linha__input primeira_linha__input__sexo" id="sexo" type="text">
+                            </div>
+        
+                            <div class="segunda_linha mb-md-4">
+                                <label class="segunda_linha__label" for="endereco">Endereço:</label>
+                                <input class="segunda_linha__input segunda_linha__input__endereco" id="endereco" type="text">
+                            </div>
+        
+                            <div class="terceira_linha mb-md-4">
+                                <label class="terceira_linha__label" for="email">Email:</label>
+                                <input class="terceira_linha__input terceira_linha__input__email" id="email" type="text">
+
+                                <label class="segunda_linha__label" for="numero">Numero:</label>
+                                <input class="terceira_linha__input terceira_linha__input__numero" id="numero" type="number">
+                            </div>
+                            
+                            <div class="quarta_linha">
+                                <select class="quarta_linha__selecao" id="selecao-de-cargo">
+                                    <option value="Gerente">Gerente</option>
+                                    <option value="Vendedor">Vendedor</option>
+                                    <option value="Assistente Administrativo">Assistente Administrativo</option>
+                                    <option value="Analista de Recursos Humanos">Analista de Recursos Humanos</option>
+                                    <option value="Contador">Contador</option>
+                                    <option value="Engenheiro">Engenheiro</option>
+                                </select>
+                            </div>
+
+                            <div class="d-flex justify-content-end buttons_linha">
+                                <button class="btn btn-secondary me-3" type="reset">Cancelar</button>
+                                <button class="quarta_linha__button btn btn-primary me-md-4 me-lg-5" id="cadastra" type="submit">Cadastra</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="lista_funcionarios mt-5">
+                <div class="container">
+                    <div class="row">
+                        <nav>
+                            <ul class="nav nav-tabs justify-content-between">
+                                <li class="nav-item">
+                                    <button type="button" data-bs-toggle="tab" data-bs-target="#todos_funcionarios" class="nav-link active">Todos</button>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="link_separador nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Separação de cargos </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <button type="button" data-bs-toggle="tab" data-bs-target="#gerentes" class="dropdown-item">Gerentes</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" data-bs-toggle="tab" data-bs-target="#vendedores" class="dropdown-item">Vendedores</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" data-bs-toggle="tab" data-bs-target="#assistentes_administativos" class="dropdown-item">Assistentes Administrativos</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" data-bs-toggle="tab" data-bs-target="#analistas_recursos_humanos" class="dropdown-item">Analistas de Recursos Humanos</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" data-bs-toggle="tab" data-bs-target="#contadores" class="dropdown-item">Contadores</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" data-bs-toggle="tab" data-bs-target="#engenheiros" class="dropdown-item">Engenheiros</button>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="row">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="todos_funcionarios">
+                                <table id="tabela_funcionarios">
+                                    <tbody class="tabela_funcionarios__lista" id="tabela_todos">
+                                        
+                                        
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane" id="gerentes">
+                                <table id="tabela_funcionarios">
+                                    <tbody class="tabela_funcionarios__lista" id="tabela_gerentes">
+                                        
+                                        
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane" id="vendedores">
+                                <table id="tabela_funcionarios">
+                                    <tbody class="tabela_funcionarios__lista" id="tabela_vendedores">
+                                        
+                                        
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane" id="assistentes_administativos">
+                                <table id="tabela_funcionarios">
+                                    <tbody class="tabela_funcionarios__lista" id="tabela_assistentes_administativos">
+                                        
+                                        
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane" id="analistas_recursos_humanos">
+                                <table id="tabela_funcionarios">
+                                    <tbody class="tabela_funcionarios__lista" id="tabela_analistas_recursos_humanos">
+                                        
+                                        
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane" id="contadores">
+                                <table id="tabela_funcionarios">
+                                    <tbody class="tabela_funcionarios__lista" id="tabela_contadores">
+                                        
+                                        
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane" id="engenheiros">
+                                <table id="tabela_funcionarios">
+                                    <tbody class="tabela_funcionarios__lista" id="tabela_engenheiros">
+                                        
+                                        
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cadastro-pessoas.js"></script>
+</body>
+</html>
